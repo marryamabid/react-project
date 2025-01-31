@@ -26,9 +26,10 @@ export default function Footer() {
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/about" className="hover:underline">
+                                    <NavLink to="/about" className={({isActive})=>`hover:underline 
+                                    ${isActive ? "text-orange-700" : "text-gray-700"}`}>
                                         About
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
